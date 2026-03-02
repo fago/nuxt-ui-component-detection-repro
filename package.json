@@ -11,9 +11,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
   },
-  "packageManager": "npm@10.9.2",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.66",
