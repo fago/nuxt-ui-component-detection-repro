@@ -1,8 +1,5 @@
 @import "tailwindcss";
-/* NOT importing "@nuxt/ui" here — Nuxt UI registers its own CSS entry (runtime/index.css)
- * via the module. This simulates projects that have their own Tailwind entry point
- * predating Nuxt UI, or projects using Nuxt layers where the Tailwind entry is in
- * a different package than where @nuxt/ui is registered. */
+@import "@nuxt/ui";
 
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
