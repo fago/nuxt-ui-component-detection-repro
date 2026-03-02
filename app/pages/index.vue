@@ -4,11 +4,18 @@
       componentDetection + custom Tailwind entry
     </h1>
 
+    <!-- Proof that basic Tailwind works -->
+    <div class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg">
+      This styled box proves Tailwind CSS is working via @tailwindcss/vite.
+    </div>
+
     <p class="text-sm max-w-lg text-center">
-      These buttons should have colored backgrounds, hover states, and focus outlines.
-      With <code>@import "@nuxt/ui"</code> removed from main.css, the utility classes
-      from component theme files (e.g. <code>focus-visible:outline-2</code>,
-      <code>hover:bg-primary/75</code>) are missing from the generated CSS.
+      The box above uses standard Tailwind utilities (<code>bg-blue-500</code>,
+      <code>rounded-lg</code>, <code>shadow-lg</code>) and renders correctly.
+      However, the buttons below are missing their component-specific styles
+      (colored backgrounds, hover states, focus outlines) because the
+      <code>@source</code> directives from componentDetection in
+      <code>.nuxt/ui.css</code> don't reach the custom Tailwind root.
     </p>
 
     <div class="flex items-center gap-2">
