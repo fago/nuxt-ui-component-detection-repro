@@ -1,0 +1,21 @@
+@import "tailwindcss";
+/* NOT importing "@nuxt/ui" here — Nuxt UI registers its own CSS entry (runtime/index.css)
+ * via the module. This simulates projects that have their own Tailwind entry point
+ * predating Nuxt UI, or projects using Nuxt layers where the Tailwind entry is in
+ * a different package than where @nuxt/ui is registered. */
+
+@theme static {
+  --font-sans: 'Public Sans', sans-serif;
+
+  --color-green-50: #effdf5;
+  --color-green-100: #d9fbe8;
+  --color-green-200: #b3f5d1;
+  --color-green-300: #75edae;
+  --color-green-400: #00dc82;
+  --color-green-500: #00c16a;
+  --color-green-600: #00a155;
+  --color-green-700: #007f45;
+  --color-green-800: #016538;
+  --color-green-900: #0a5331;
+  --color-green-950: #052e16;
+}
